@@ -1,0 +1,146 @@
+/* ReviewsDisplay.css */
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: #1e3851;
+  /* Dark blue text color */
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  /* For the underline */
+}
+
+.carousel-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 51%;
+  width: 50px;
+  height: 3px;
+  background-color: #f9004d;
+  /* Underline color */
+  transform: translateX(-50%);
+  /* Center the underline */
+}
+
+.carousel-heading i {
+  font-size: 2.2rem;
+  margin-right: 10px;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin: 15px auto;
+  padding: 20px;
+  border: 1px solid rgba(30, 56, 81, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(30, 56, 81, 0.1);
+}
+
+.prev-icon,
+.next-icon {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.prev-icon:hover,
+.next-icon:hover {
+  color: rgb(39, 39, 39);
+}
+
+.review {
+  text-align: center;
+}
+
+.user {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(30 56 81 / 1);
+}
+
+.rating {
+  color: #fdd835;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.rating i {
+  font-size: 24px;
+  margin: 0 2px;
+}
+
+.star-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.star-container i {
+  color: #fdd835;
+  transition: color 0.3s ease;
+}
+
+.review-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.next-icon {
+  right: 10px;
+}
+
+.prev-icon {
+  left: 10px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.active {
+  background-color: black;
+}
+
+/* Loading div */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  height: 200px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  color: #1e3851;
+}

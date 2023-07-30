@@ -1,0 +1,60 @@
+const projects = [
+  {
+    id: 1,
+    url: "../../../Pictures/Photographer.webp",
+    title: "Online Photographers Platform in MERN",
+    category: "MERN Apps",
+    description: "Hire photographers online, seamlessly.",
+    link: "../../../MyProjects/Photographer.zip",
+  },
+  {
+    id: 2,
+    url: "../../../Pictures/music.webp",
+    title: "React Music App With Firebase",
+    category: "MERN Apps",
+    description: "Immerse in melodies, anytime.",
+    link: "../../../MyProjects/react-music-app.zip",
+  },
+  {
+    id: 3,
+    url: "../../../Pictures/portfolio.jpg",
+    title: "React Portfolio App With Firebase",
+    category: "MERN Apps",
+    description: "Your work, beautifully showcased.",
+    link: "../../../MyProjects/Photographer.zip",
+  },
+  {
+    id: 4,
+    url: "../../../Pictures/driver.png",
+    title: "Detection of Drowsiness in Drivers",
+    category: "Data Science",
+    description: "Alertness for safer drives.",
+    link: "../../../MyProjects/driver-drowsiness-detection.zip",
+  },
+  {
+    id: 5,
+    url: "../../../Pictures/fraud.png",
+    title: "Detection of Credit Card Fraud",
+    category: "Data Science",
+    description: "Secure transactions, assured.",
+    link: "../../../MyProjects/Credit-Card-Fraud-Detection.zip",
+  },
+  {
+    id: 6,
+    url: "../../../Pictures/terrfic.jpg",
+    title: "Terfic Light Detection using Python",
+    category: "Machine Learning",
+    description: "Light analysis made smarter.",
+    link: "../../../MyProjects/traffic-light-detection.zip",
+  },
+  {
+    id: 7,
+    url: "../../../Pictures/speech.png",
+    title: "Speech Emotion Recognition",
+    category: "Machine Learning",
+    description: "Emotions understood, words unspoken.",
+    link: "../../../MyProjects/Speech-Emotion-Recognition.zip",
+  },
+];
+
+export default projects;

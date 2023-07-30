@@ -1,0 +1,84 @@
+.signup-form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 75vh;
+  margin: 30px auto;
+  box-shadow: 5px 5px 15px rgba(193, 185, 185, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signup-form-content h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #f9004d;
+}
+
+.signup-form-content input,
+.googleSignIn {
+  padding: 15px 20px;
+  font-size: 19px;
+  width: 400px;
+  outline: none;
+  color: rgb(30 56 81/1);
+  font-family: 'Poppins', sans-serif;
+  border-radius: 7px;
+  margin: 15px;
+  text-align: center;
+}
+
+input[type="submit"],
+.googleSignIn {
+  padding: 15px 45px;
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+  color: #f9004d;
+  transition: color 0.5s ease;
+}
+
+input[type="submit"]:hover,
+.googleSignIn:hover {
+  color: rgb(30 56 81/1);
+}
+
+.or-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 10px 0;
+}
+
+.or-line {
+  flex: 1;
+  height: 1px;
+  background-color: #000;
+}
+
+.or-content {
+  padding: 0 10px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Styling for Font Awesome icons */
+.signup-form-content i {
+  position: absolute;
+  margin: 38px 39px;
+  font-size: 18px;
+  color: #aaa;
+}
+
+/* Adjusting icon position for different input types */
+.signup-form-content input[type="email"] {
+  padding-left: 40px;
+}
+
+.signup-form-content input[type="password"] {
+  padding-left: 40px;
+}

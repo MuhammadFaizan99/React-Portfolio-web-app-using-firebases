@@ -1,0 +1,143 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  margin: 45px auto;
+  color: #1e3851;
+  /* Dark blue text color */
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  /* For the underline */
+}
+
+.projects-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 51%;
+  width: 50px;
+  height: 3px;
+  background-color: #f9004d;
+  /* Underline color */
+  transform: translateX(-50%);
+  /* Center the underline */
+}
+
+.projects-heading i {
+  font-size: 2.2rem;
+  margin-right: 10px;
+}
+
+.navigation button {
+  font-size: 18px;
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #f9004d;
+  color: white;
+}
+
+.navigation button:hover {
+  background-color: #de1856;
+  color: white;
+}
+
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.projects img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+  flex: 0 0 30%;
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  /* Added transition for box shadow and transform */
+}
+
+.project:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Change box shadow on hover */
+  transform: scale(1.05);
+  /* Apply a slight scale increase on hover */
+}
+
+/* Keyframe animation for projects when displayed */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to projects */
+.project.animate {
+  animation: fadeIn 0.5s ease;
+}
+
+.project h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  /* Set the font family for the title */
+  color: #333;
+}
+
+.project p {
+  font-size: 14px;
+  font-family: 'Helvetica', sans-serif;
+  /* Set the font family for the description */
+  color: #666;
+  margin-top: 8px;
+}
+
+.project button {
+  font-size: 16px;
+  padding: 8px 14px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: #f9004d;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.project button:hover {
+  background-color: #de1856;
+}

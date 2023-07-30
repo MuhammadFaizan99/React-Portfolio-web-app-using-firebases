@@ -1,0 +1,168 @@
+/* Services Component CSS */
+
+.services-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.services-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: #1e3851;
+  /* Dark blue text color */
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  /* For the underline */
+}
+
+.services-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 55%;
+  width: 50px;
+  height: 3px;
+  background-color: #f9004d;
+  /* Underline color */
+  transform: translateX(-50%);
+  /* Center the underline */
+}
+
+.services-heading i {
+  font-size: 2.2rem;
+  margin-right: 10px;
+}
+
+.primary__services-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+/* Modal Styling */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Semi-transparent black overlay */
+  z-index: 999;
+  /* Ensure the overlay is above other elements */
+}
+
+/* Modal */
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  /* Ensure the modal is above the overlay */
+}
+
+.secondary-service {
+  width: 300px;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 5px rgba(193, 185, 185, 0.3);
+  align-items: center;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.secondary-service:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.secondary-service i {
+  font-size: 2.4rem;
+  margin-right: 10px;
+  color: #f9004d;
+}
+
+.secondary-service h3 {
+  margin: 10px 0;
+  color: #1e3851;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+.secondary-service p {
+  color: #6b7280;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+}
+
+.secondary-service button {
+  padding: 10px 15px;
+  font-size: 18px;
+  margin: 10px auto;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  float: right;
+  background-color: #f9004d;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .services-heading {
+    font-size: 2rem;
+  }
+
+  .services-heading::after {
+    left: 58%;
+    width: 30px;
+  }
+
+  .services-heading i {
+    font-size: 1.7rem;
+    margin-right: 10px;
+  }
+
+  .secondary-service {
+    width: 280px;
+  }
+
+  .secondary-service i {
+    font-size: 2rem;
+  }
+
+  .secondary-service h3 {
+    font-size: 19px;
+  }
+
+  .secondary-service p {
+    font-size: 17px;
+  }
+
+  .secondary-service button {
+    padding: 7px 13px;
+    font-size: 17px;
+  }
+}

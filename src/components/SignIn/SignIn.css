@@ -1,0 +1,78 @@
+.signin-form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 60vh;
+  margin: 30px auto;
+  box-shadow: 5px 5px 15px rgba(193, 185, 185, 0.3);
+
+  /* Center the element on the page */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signin-form-content h1 {
+  font-family: "Poppins", sans-serif;
+  color: #f9004d;
+}
+
+.signin-form-content input {
+  padding: 15px 20px;
+  font-size: 19px;
+  width: 400px;
+  outline: none;
+  color: rgb(30 56 81/1);
+  font-family: "Poppins", sans-serif;
+  border-radius: 7px;
+  margin: 15px;
+  text-align: center;
+}
+
+input[type="submit"] {
+  padding: 15px 45px;
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+  color: #f9004d;
+  transition: color 0.5s ease;
+}
+
+input[type="submit"]:hover {
+  color: rgb(30 56 81/1);
+}
+
+/* Styling for Font Awesome icons */
+.signin-form-content i {
+  position: absolute;
+  margin: 38px 39px;
+  font-size: 18px;
+  color: #aaa;
+}
+
+/* Adjusting icon position for different input types */
+.signin-form-content input[type="email"] {
+  padding-left: 40px;
+}
+
+.signin-form-content input[type="password"] {
+  padding-left: 40px;
+}
+
+/* Styling for the "New here" text */
+
+.signin-form-content p {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 22px;
+  color: rgb(30 56 81/1);
+  cursor: pointer;
+}
+
+.signin-form-content p:hover {
+  text-decoration: underline;
+}

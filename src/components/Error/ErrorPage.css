@@ -1,0 +1,43 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Set the height to the full viewport height */
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  color: #1e3851;
+}
+
+.not-found h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 8rem;
+  margin: 0;
+  color: #f9004d;
+}
+
+.not-found p {
+  font-size: 1.5rem;
+}
+
+.not-found i {
+  font-size: 6rem;
+  color: #f9004d;
+  margin: 1rem 0;
+}
+
+.not-found .home-button {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  background-color: #f9004d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.not-found .home-button:hover {
+  background-color: #cc003b;
+}

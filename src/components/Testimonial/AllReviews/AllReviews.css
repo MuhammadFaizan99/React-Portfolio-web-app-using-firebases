@@ -1,0 +1,104 @@
+/* AllReviews.css */
+.all-reviews-page {
+  margin: 60px auto 40px;
+  /* Add more margin from the top (60px) and keep 40px margin from the bottom */
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-heading {
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  color: rgb(30, 56, 81);
+}
+
+.filter-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f9004d;
+  color: white;
+}
+
+.filter-button.selected {
+  background-color: rgb(30, 56, 81);
+}
+
+.reviews-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  /* Center the loading and no user content vertically */
+  justify-content: center;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.review-box {
+  width: 200px;
+  flex-basis: 25%;
+  /* Set the flex-basis to 25% to ensure 4 boxes in one line */
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  /* Add transition for a smooth effect */
+}
+
+.review-box:hover {
+  transform: translateY(-5px);
+  /* Add a small vertical translation on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Add a stronger box shadow on hover */
+}
+
+.rating-container {
+  color: #ffbf00;
+  /* Change the color of the stars (yellow) */
+  font-size: 20px;
+  /* Increase the size of the stars icon */
+}
+
+.review-text {
+  color: #f9004d;
+  font-family: Poppins, sans-serif;
+  color: rgb(107, 114, 128);
+  font-size: 16px;
+  /* Increase font size of review text */
+}
+
+.client-name {
+  font-family: Poppins, sans-serif;
+  /* Change the font family of the user name */
+  color: rgb(30, 56, 81);
+  /* Change the color of the user name */
+  font-size: 18px;
+  /* Increase font size of user name */
+}
+
+.loading-text,
+.no-reviews-text {
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 32px;
+  /* Set a larger font size for loading and no user text */
+  font-weight: bold;
+  /* Make the text bold */
+  color: rgb(30, 56, 81, 1);
+}
